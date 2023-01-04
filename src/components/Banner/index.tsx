@@ -11,6 +11,7 @@ const Banner = () => {
       justifyContent="flex-start"
       alignItems="center"
       bgImage="/assets/images/banner_background.png"
+      backgroundSize='cover'
       paddingLeft="8.75rem"
       marginBottom="2.075625rem"
     >
