@@ -1,5 +1,6 @@
-import { Divider, Flex, Text } from "@chakra-ui/react";
+import { Divider, Flex } from "@chakra-ui/react";
 import Banner from "../components/Banner";
+import SliderContinents from "../components/SliderContinents";
 import TravelTypes from "../components/TravelTypes";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         borderWidth="1px"
         opacity={1}
       />
+      <SliderContinents />
     </Flex>
   );
 }
