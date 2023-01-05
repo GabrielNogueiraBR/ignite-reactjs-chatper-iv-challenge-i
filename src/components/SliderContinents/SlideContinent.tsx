@@ -17,8 +17,7 @@ const SlideContinent = ({
 }: SlideContinentProps) => {
   return (
     <LinkBox w="100%" h="100%">
-      <NextLink href={targetHref} passHref>
-        <LinkOverlay>
+      <NextLink href={targetHref}>
           <VStack
             w="100%"
             h="100%"
@@ -40,7 +39,6 @@ const SlideContinent = ({
             spacing={4}
           >
             <Text
-              as="a"
               fontSize="3rem"
               fontWeight={700}
               lineHeight="4.5rem"
@@ -61,7 +59,6 @@ const SlideContinent = ({
               {subtitle}
             </Text>
           </VStack>
-        </LinkOverlay>
       </NextLink>
     </LinkBox>
   );

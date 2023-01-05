@@ -2,10 +2,7 @@ import React from "react";
 
 import { Text, VStack } from "@chakra-ui/react";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import Slider from "./Slider";
+import DynamicSlider from "./DynamicSlider";
 
 const SliderContinents = () => {
   return (
@@ -28,7 +25,7 @@ const SliderContinents = () => {
         <br />
         Então escolha seu continente
       </Text>
-      <Slider />
+      <DynamicSlider />
     </VStack>
   );
 };

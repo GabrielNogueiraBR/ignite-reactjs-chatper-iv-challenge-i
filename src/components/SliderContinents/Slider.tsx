@@ -9,12 +9,13 @@ import { PaginationOptions } from "swiper/types";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 import SlideContinent from "./SlideContinent";
 
 const Slider = () => {
   const pagination: PaginationOptions = {
     clickable: true,
-    renderBullet: (index, className) =>
+    renderBullet: (_, className) =>
       '<span class="' + className + '">' + "</span>",
   };
 
