@@ -24,7 +24,7 @@ const Header = () => {
       >
         <Box position="relative" w="11.50375rem" h="2.87rem">
           <ChakraNextImage
-            src="assets/logo.svg"
+            src="/assets/logo.svg"
             alt="logo"
             position="relative"
             fill='transparent'
