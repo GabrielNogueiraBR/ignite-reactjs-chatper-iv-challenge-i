@@ -2,6 +2,7 @@ import { Flex, HStack, Text, VStack } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import React from "react";
 import ContinentBanner from "../../components/ContinentBanner";
+import ContinentCities from "../../components/ContinentCities";
 import ContinentInfo from "../../components/ContinentInfo";
 
 const ContinentPage = () => {
@@ -10,7 +11,7 @@ const ContinentPage = () => {
   const { name } = router.query;
 
   return (
-    <VStack spacing={20}>
+    <VStack spacing={20} paddingBottom="2.1875rem">
       <ContinentBanner
         name="Europa"
         imageSrc="/assets/images/county_banner.png"
@@ -23,6 +24,7 @@ const ContinentPage = () => {
           citiesTopOneHundredAmount: 27,
         }}
       />
+      <ContinentCities />
     </VStack>
   );
 };
