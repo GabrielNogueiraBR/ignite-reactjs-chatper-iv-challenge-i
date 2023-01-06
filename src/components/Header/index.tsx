@@ -22,12 +22,22 @@ const Header = () => {
         alignItems="center"
         padding="1.6875rem 0"
       >
-        <Box position="relative" w="11.50375rem" h="2.87rem">
+        <Box
+          position="relative"
+          w={{
+            base: "5.0625rem",
+            md: "11.50375rem",
+          }}
+          h={{
+            base: "1.25rem",
+            md: "2.87rem",
+          }}
+        >
           <ChakraNextImage
             src="/assets/logo.svg"
             alt="logo"
             position="relative"
-            fill='transparent'
+            fill="transparent"
           />
         </Box>
       </Flex>
