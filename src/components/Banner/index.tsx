@@ -22,7 +22,7 @@ const Banner = () => {
         md: "8.75rem",
       }}
       marginBottom={{
-        base: "none",
+        base: "2.075625rem",
         md: "2.075625rem",
       }}
     >
