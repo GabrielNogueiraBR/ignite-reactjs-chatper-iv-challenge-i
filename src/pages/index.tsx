@@ -13,6 +13,7 @@ export default function Home() {
         w="5.625rem"
         borderColor="gray.600"
         borderWidth="1px"
+        bg='gray.600'
         opacity={1}
       />
       <SliderContinents />
