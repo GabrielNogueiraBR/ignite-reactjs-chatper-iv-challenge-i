@@ -22,12 +22,12 @@ const Slider = () => {
   return (
     <Flex
       w="100%"
-      h={450}
+      h={{ base: "15.625rem", md: "28.125rem" }}
       position="relative"
       sx={{
         ".swiper-pagination-bullet": {
-          width: "1rem",
-          height: "1rem",
+          width: { base: "0.5rem", md: "1rem" },
+          height: { base: "0.5rem", md: "1rem" },
           background: "gray.400",
         },
         ".swiper-pagination-bullet-active": {
@@ -38,10 +38,12 @@ const Slider = () => {
           opacity: 1,
         },
         ".swiper-button-next": {
-          right: "2.65625rem",
+          right: { base: "1.25rem", md: "2.65625rem" },
+          transform: { base: "scale(0.5)", md: "scale(1)" },
         },
         ".swiper-button-prev": {
-          left: "2.65625rem",
+          left: { base: "1.25rem", md: "2.65625rem" },
+          transform: { base: "scale(0.5)", md: "scale(1)" },
         },
       }}
     >

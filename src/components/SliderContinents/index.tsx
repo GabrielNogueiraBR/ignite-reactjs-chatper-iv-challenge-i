@@ -11,13 +11,25 @@ const SliderContinents = () => {
       w="100%"
       justifyContent="center"
       alignItems="center"
-      padding="3.375rem 6.25rem"
-      spacing="3.25rem"
+      padding={{
+        base: "1.5rem 0",
+        md: "3.375rem 6.25rem",
+      }}
+      spacing={{
+        base: '1.25rem',
+        md: "3.25rem"
+      }}
     >
       <Text
-        fontSize="2.25rem"
+        fontSize={{
+          base: "1.25rem",
+          md: "2.25rem",
+        }}
         fontWeight={500}
-        lineHeight="3.375rem"
+        lineHeight={{
+          base: "1.875rem",
+          md: "3.375rem",
+        }}
         textAlign="center"
         maxW="52.4375rem"
       >
