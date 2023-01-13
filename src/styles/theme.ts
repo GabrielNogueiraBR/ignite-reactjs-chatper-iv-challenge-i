@@ -25,4 +25,7 @@ export const theme = extendTheme({
       },
     },
   },
+  breakpoints: {
+    md: '64rem'
+  }
 });
