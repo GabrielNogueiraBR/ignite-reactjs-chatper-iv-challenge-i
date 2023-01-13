@@ -11,7 +11,7 @@ const ContinentPage = () => {
   const { name } = router.query;
 
   return (
-    <VStack spacing={20} paddingBottom="2.1875rem">
+    <VStack spacing={20} paddingBottom={{ base: "1rem", md: "2.1875rem" }}>
       <ContinentBanner
         name="Europa"
         imageSrc="/assets/images/county_banner.png"

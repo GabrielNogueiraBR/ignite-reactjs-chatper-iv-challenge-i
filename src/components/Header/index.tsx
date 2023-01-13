@@ -1,9 +1,17 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, useBreakpointValue } from "@chakra-ui/react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import React from "react";
 import ChakraNextImage from "../ChakraNextImage";
+import Logo from "./Logo";
+import ReturnButton from "./ReturnButton";
 
 const Header = () => {
+  const router = useRouter();
+  const isSmallScreen = useBreakpointValue({ base: true, md: false });
+
+  const isHomePage = router.asPath === "/";
+
   return (
     <>
       <Head>
@@ -20,26 +28,15 @@ const Header = () => {
         h="100%"
         justifyContent="center"
         alignItems="center"
-        padding="1.6875rem 0"
+        padding={{ base: "0.9375rem 0", md: "1.6875rem 0" }}
       >
-        <Box
-          position="relative"
-          w={{
-            base: "5.0625rem",
-            md: "11.50375rem",
-          }}
-          h={{
-            base: "1.25rem",
-            md: "2.87rem",
-          }}
-        >
-          <ChakraNextImage
-            src="/assets/logo.svg"
-            alt="logo"
-            position="relative"
-            fill="transparent"
+        {!isHomePage && isSmallScreen && (
+          <ReturnButton
+            aria-label="return navigation page"
+            onClick={() => router.back()}
           />
-        </Box>
+        )}
+        <Logo />
       </Flex>
     </>
   );

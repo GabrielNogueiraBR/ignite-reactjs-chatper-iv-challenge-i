@@ -36,6 +36,7 @@ const CityCard = ({ city, country, imageSrc, flagSrc }: CityCardProps) => {
         borderRadius: "0.25rem",
         pointerEvents: "none",
       }}
+      justifySelf={{ base: "center", md: "unset" }}
     >
       <CardHeader
         w="100%"

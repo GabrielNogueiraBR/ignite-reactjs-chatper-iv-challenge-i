@@ -10,14 +10,21 @@ const ContinentBanner = ({ name, imageSrc }: CountryBannerProps) => {
   return (
     <Flex
       position="relative"
-      align="flex-end"
+      justify={{ base: "center", md: "" }}
+      align={{
+        base: "center",
+        md: "flex-end",
+      }}
       w="100%"
-      h="31.25rem"
+      h={{
+        base: "9.375rem",
+        md: "31.25rem",
+      }}
       bgImage={imageSrc}
       backgroundPosition="center"
       bgSize="cover"
-      paddingLeft="8.75rem"
-      paddingBottom="3.75rem"
+      paddingLeft={{ base: "0", md: "8.75rem" }}
+      paddingBottom={{ base: "0", md: "3.75rem" }}
       _after={{
         position: " absolute",
         content: '""',
@@ -30,8 +37,8 @@ const ContinentBanner = ({ name, imageSrc }: CountryBannerProps) => {
       }}
     >
       <Text
-        fontSize="3rem"
-        lineHeight="4.5rem"
+        fontSize={{ base: "1.75rem", md: "3rem" }}
+        lineHeight={{ base: "2.625rem", md: "4.5rem" }}
         fontWeight={600}
         color="gray.50"
         zIndex={1}

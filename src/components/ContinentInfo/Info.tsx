@@ -10,21 +10,26 @@ interface InfoProps {
 
 const Info = ({ title, value, detail }: InfoProps) => {
   return (
-    <VStack margin="0" padding="0" justify="center" align="center">
+    <VStack
+      margin="0"
+      padding="0"
+      justify={{ base: "center", md: "center" }}
+      align={{ base: "flex-start", md: "center" }}
+    >
       <Text
-        fontSize="3rem"
-        lineHeight="4.5rem"
+        fontSize={{ base: "1.5rem", md: "3rem" }}
+        lineHeight={{ base: "2.25rem", md: "4.5rem" }}
         fontWeight={600}
         color="yellow.300"
-        textAlign="center"
+        textAlign='center'
       >
         {value}
       </Text>
       <Text
         position="relative"
-        fontSize="1.5rem"
-        lineHeight="2.25rem"
-        fontWeight={600}
+        fontSize={{ base: "1.125rem", md: "1.5rem" }}
+        lineHeight={{ base: "1.6875rem", md: "2.25rem" }}
+        fontWeight={{ base: 400, md: 600 }}
         textAlign="center"
       >
         {title}
@@ -33,8 +38,8 @@ const Info = ({ title, value, detail }: InfoProps) => {
             <InfoOutlineIcon
               position="absolute"
               top="50%"
-              right="-0.3125rem"
-              boxSize="1rem"
+              right={{ base: "-0.15rem", md: "-0.3125rem" }}
+              boxSize={{ base: "0.520625rem", md: "1rem" }}
               color="gray.400"
               transform="translate(100%, -50%)"
             />

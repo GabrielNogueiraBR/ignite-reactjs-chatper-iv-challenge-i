@@ -1,4 +1,4 @@
-import { HStack, Text } from "@chakra-ui/react";
+import { Flex, HStack, Text } from "@chakra-ui/react";
 import React from "react";
 import Info from "./Info";
 
@@ -13,11 +13,17 @@ interface ContinentInfoProps {
 
 const ContinentInfo = ({ bio, infos }: ContinentInfoProps) => {
   return (
-    <HStack padding="0 8.75rem" spacing="4.375rem">
+    <Flex
+      direction={{ base: "column", md: "row" }}
+      w="100%"
+      padding={{ base: "0 1rem", md: "0 8.75rem" }}
+      gap={{ base: "1rem", md: "4.375rem" }}
+      overflow="hidden"
+    >
       <Text
-        flex="1.2"
-        fontSize="1.5rem"
-        lineHeight="2.25rem"
+        flex={{ base: "1", md: "1.2" }}
+        fontSize={{ base: "0.875rem", md: "1.5rem" }}
+        lineHeight={{ base: "1.3125rem", md: "2.25rem" }}
         fontWeight={400}
         textAlign="justify"
       >
@@ -32,7 +38,7 @@ const ContinentInfo = ({ bio, infos }: ContinentInfoProps) => {
           detail="Cidades que estão no top 100."
         />
       </HStack>
-    </HStack>
+    </Flex>
   );
 };
 
